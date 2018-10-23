@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+// import store from '@/store/index' 引入store
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/home',
+      name: 'home',
+      component: () => import('./home')
+    },
+    {
+      path: '/hello/world',
+      name: 'hello-world',
+      component: () => import('@/components/HelloWorld')
     }
   ]
 })
