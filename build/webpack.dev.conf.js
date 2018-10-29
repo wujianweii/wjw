@@ -10,8 +10,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 // 自定义添加
-const express = require('express')
-const app = express()
+const express = require('express') // 导入express模块
+const app = express() // 调用方法，返回app
 const router = express.Router()
 const mock = require('../mock/mock.js')
 app.use('/', router)
@@ -50,6 +50,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       poll: config.dev.poll,
     },
     // 自定义添加
+    // app本质：请求监听函数
     before(app) {
       app.get('/c/0429bfa2/first', function(req, res) {
         res.json(mock.first);
