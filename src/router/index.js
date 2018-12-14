@@ -29,6 +29,11 @@ export default new Router({
     {
       path: '*',
       redirect: '/note'
+    },
+    {
+      path: '/flex',
+      name: 'flex',
+      component: () => import('@/components/Flex')
     }
   ]
 })
