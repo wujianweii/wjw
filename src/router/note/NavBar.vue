@@ -16,15 +16,15 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
       NavBarList: [
         '学习',
         '多语言'
       ]
-    }
+    };
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 .logo {

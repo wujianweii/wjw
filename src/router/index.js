@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 // import store from '@/store/index' // 引入store
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -36,4 +36,4 @@ export default new Router({
       component: () => import('@/components/Flex')
     }
   ]
-})
+});

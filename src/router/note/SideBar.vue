@@ -22,12 +22,12 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
       SideBarList: []
-    }
+    };
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 .note-sideBar {
@@ -55,5 +55,3 @@ export default {
   }
 }
 </style>
-
-

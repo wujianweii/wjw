@@ -5,19 +5,19 @@
   </div>
 </template>
 <script>
-import NavBar from './NavBar'
-import SideBar from './SideBar'
+import NavBar from './NavBar';
+import SideBar from './SideBar';
 
 export default {
-  data () {
+  data() {
     return {
       NavBarList: [],
       SideBarList: []
-    }
+    };
   },
   components: {
     NavBar,
     SideBar
   }
-}
+};
 </script>

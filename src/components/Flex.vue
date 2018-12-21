@@ -8,7 +8,7 @@
 <style lang="scss" scoped>
   .parent {
     display: flex;
-    width: 60px;
+    width: 600px;
   }
   .parent > div {
     height: 100px;

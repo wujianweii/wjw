@@ -5,28 +5,28 @@
   </div>
 </template>
 <script>
-import { Loading } from 'vux'
-import { getFirst } from '@/store/api'
+import { Loading } from 'vux';
+import { getFirst } from '@/store/api';
 
 export default {
-  data () {
+  data() {
     return {
       loading: true,
       data: {}
-    }
+    };
   },
   components: {
     Loading
   },
   methods: {
-    getFirstData () {
+    getFirstData() {
       getFirst().then(res => {
         if (res.data.code === 1) {
-          this.data = res.data.data
-          this.loading = false
+          this.data = res.data.data;
+          this.loading = false;
         }
-      })
+      });
     }
   }
-}
+};
 </script>
